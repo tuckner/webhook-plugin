@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webhook Sender</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 10px;
+      width: 350px; /* Set a fixed width or min-width as needed */
+    }
+
+    input#inputBox {
+      width: 100%; /* This will make the textarea take the full width of the body */
+      height: 20px;
+      margin-bottom: 10px;
+      border: 1px solid #dcdcdc;
+      padding: 5px;
+      box-sizing: border-box;
+      font-size: 16px;
+      resize: none;
+    }
+
+    button#submitButton {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      width: 100%; /* This will make the button take the full width of the body */
+      border-radius: 4px;
+    }
+
+    button#submitButton:hover {
+      background-color: #45a049;
+    }
+
+    div#header {
+      width: 100%; /* This will make the div take the full width of the body */
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #dcdcdc;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id=""header>
+    Enter a webhook URL:
+  </div>
+  <p></p>
+  <input id="inputBox" placeholder="https://..."></input>
+  <input id="inputCheckbox" type="checkbox">Include page body</input>
+  <button id="submitButton">Save</button>
+  <script src="popup.js"></script>
+</body>
+</html>
